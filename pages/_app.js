@@ -3,8 +3,6 @@ import React from "react";
 import withReduxStore from "../lib/with-redux-store";
 import { StoreProvider } from "easy-peasy";
 
-import '../assets/css/index.scss';
-
 class MyApp extends App {
   render() {
     const { Component, pageProps, reduxStore } = this.props;
