@@ -10,7 +10,7 @@ export default props => {
           </Link>
         </li>
         <li>
-          <Link href="/todos">
+          <Link href="/todo">
             <a>TODOS</a>
           </Link>
         </li>
