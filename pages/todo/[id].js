@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useStoreState, useStoreActions } from "easy-peasy";
-import { useRouter } from "next/router";
+import React from "react";
 
 import { api } from "../../lib/useAPI";
 import Layout from "../../components/Layout";

@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useStoreState, useStoreActions } from "easy-peasy";
+import React from "react";
 
 import Layout from "../components/Layout";
 

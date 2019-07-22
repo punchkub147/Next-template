@@ -6,17 +6,22 @@ export default props => {
       <ul>
         <li>
           <Link href="/">
-            <a>HOME</a>
+            <a>Home</a>
           </Link>
         </li>
         <li>
           <Link href="/todo">
-            <a>TODOS</a>
+            <a>Todos</a>
           </Link>
         </li>
         <li>
           <Link href="/counter">
-            <a>COUNTER</a>
+            <a>Counter</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/form">
+            <a>Form</a>
           </Link>
         </li>
       </ul>

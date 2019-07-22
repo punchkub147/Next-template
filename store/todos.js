@@ -1,5 +1,4 @@
 import { action, thunk } from "easy-peasy";
-import _ from "lodash";
 import cuid from "cuid";
 
 export default {

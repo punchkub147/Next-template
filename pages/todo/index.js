@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useStoreState, useStoreActions } from "easy-peasy";
 
 import { api } from "../../lib/useAPI";
@@ -11,13 +11,15 @@ const Todos = ({ data }) => {
     setTodos({ todos: data });
   }, [data]);
   const todos = useStoreState(state => state.todos.todos);
-  const setTodos = useStoreActions(actions => actions.todos.set);
-  const createTodo = useStoreActions(actions => actions.todos.create);
-  const updateTodo = useStoreActions(actions => actions.todos.update);
-  const deleteTodo = useStoreActions(actions => actions.todos.delete);
+  const {
+    set: setTodos,
+    create: createTodo,
+    update: updateTodo,
+    delete: deleteTodo
+  } = useStoreActions(actions => actions.todos);
   return (
     <Layout>
-      <h1>TODOS</h1>
+      <h1>TODO LIST</h1>
       <TodoNew onSubmit={createTodo} />
       {todos.map(todo => (
         <TodoItem

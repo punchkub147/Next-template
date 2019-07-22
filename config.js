@@ -1,3 +1,3 @@
-export default {
-	api: 'https://jsonplaceholder.typicode.com',
-}
+module.exports = {
+  api: "https://jsonplaceholder.typicode.com"
+};

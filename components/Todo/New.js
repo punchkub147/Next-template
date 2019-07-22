@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useStoreActions } from "easy-peasy";
 
 const keyCode = {
   ENTER: 13
