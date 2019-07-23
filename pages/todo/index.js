@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useStoreState, useStoreActions } from "easy-peasy";
+import _ from "lodash";
 
 import { api } from "../../lib/useAPI";
 import Layout from "../../components/Layout";
@@ -36,7 +37,7 @@ const Todos = ({ data }) => {
 Todos.getInitialProps = async function() {
   const { data } = await api("/todos");
   return {
-    data: data.filter((item, index) => index < 5)
+    data
   };
 };
 
